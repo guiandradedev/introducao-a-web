@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> <!-- tipo de caracter que a pagina vai renderizar, pode ser ASCII, UTF-8 e outros -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- controle do conteudo em relação a tela do usuario -->
+    <!-- https://www.w3schools.com/css/css_rwd_viewport.asp -->
+    <title>Document</title> <!-- título que aparece no navegador -->
+    <link type="image/png" sizes="16x16" rel="icon" href="favicon.png">
+
+    <!-- Meta tags de SEO -->
+    <!-- Compativeis com o Google: https://developers.google.com/search/docs/crawling-indexing/special-tags?hl=pt-br -->
+    <meta name="language" content="pt-BR">
+    <meta name="description" content="Descrição do site.">
+    <meta name="author" content="Guilherme Andrade">
+    <meta name="keywords" content="palavras, chave, separadas, por, virgula">
+    <meta name="robots" content="index"> <!-- serve pra indexação do google, nao sei muito bem sobre-->
+</head>
+
+<body>
+
+    <!-- Cabeçalhos -->
+    <h1>Teste</h1>
+    <h2>Teste</h2>
+    <h3>Teste</h3>
+    <h4>Teste</h4>
+    <h5>Teste</h5>
+    <h6>Teste</h6>
+
+    <!-- Paragrafo -->
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero ipsam placeat optio! Facilis pariatur voluptate fuga sit quasi, nobis optio tenetur molestias voluptatum numquam quis doloremque magni tempore necessitatibus temporibus?</p>
+
+    <!-- Formatações -->
+    <p><b>Lorem ipsum</b> dolor sit <strong>amet consectetur adipisicing elit.</strong> Nam maiores <i>quis magnam alias</i> dolores, <em>rem ratione sapiente</em> enim suscipit <small>officiis fuga odit</small> sunt ut, harum facilis quaerat laboriosam dolore autem.</p>
+    <p>Lorem ipsum dolor <mark>sit amet consectetur adipisicing</mark> elit. Fugit <del>fuga voluptates consequuntur</del> ut eos ipsam eius nulla <ins>tempora amet odio quis</ins> laboriosam vel nihil ad, <sub>perferendis laudantium</sub> maiores <sup>aliquid consectetur</sup>!</p>
+
+    <!-- Atributos inline-->
+    <p>Lorem ipsum dolor sit, amet <span style="color: red;">consectetur adipisicing elit</span>. Fugiat incidunt <span style="color: blue;">consequatur nemo minus</span> praesentium</p>
+
+    <!-- Links -->
+    <p>
+        <a href="pagina2.html" target="_blank">Pagina 2 em outra guia</a>
+        <a href="pagina2.html" target="_self">Pagina 2 na mesma guia</a>
+        <a href="#teste" target="_self">Mesma página em um determinado id</a>
+    </p>
+
+    
+    <!-- Imagens -->
+    <img src="imagem.jpg" alt="Imagem">
+    <img src="imagem.png" alt="Imagem inexistente que representa o pikachu" >
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT_FFQqrV614FIdjx7laD8W_RUKFfzFhYFzKDQC_63n&s" alt="Carreta furacao">
+
+    
+    <!-- Tabelas -->
+    <table>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Guilherme</td>
+                <td>Andrade</td>
+            </tr>
+            <tr>
+                <td>Guilherme</td>
+                <td>Andrade</td>
+            </tr>
+            <tr>
+                <td>Guilherme</td>
+                <td>Andrade</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Colspan 2</td>
+            </tr>
+        </tfoot>
+    </table>
+
+    
+    <!-- Listas -->
+    <ol>
+        <li>Lista ordenada</li>
+        <li>Lista ordenada</li>
+    </ol>
+    <ul>
+        <li>Lista não ordenada</li>
+    </ul>
+
+    
+    <!-- Iframe -->
+    <iframe width="720" height="720" src="https://www.youtube.com/embed/GS5K5MbSSOI" title="Rap do Minecraft (Meme)" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <!-- Tags Semanticas -->
+    <header></header>
+    <main>
+        <header></header>
+        <section>
+            <article></article>
+        </section>
+        <aside></aside>
+    </main>
+    <footer></footer>
+
+    
+    <!-- Formulários -->
+    <form method="POST" autocomplete="on">
+        <!-- Tipos de Input -->
+        <div>
+            <label for="texto">Text</label>
+            <input type="text" id="texto">
+        </div>
+        <div>
+            <input type="checkbox" value="checkbox1" id="checkbox1" name="checkbox">
+            <label for="checkbox1">Checkbox1</label>
+            <input type="checkbox" value="checkbox2" id="checkbox2" name="checkbox">
+            <label for="checkbox2">Checkbox2</label>
+        </div>
+        <div>
+            <label for="color">Input Color</label>
+            <input type="color" id="color">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" id="email">
+        </div>
+        <div>
+            <label for="file">File</label>
+            <input type="file" id="file">
+        </div>
+        <div>
+            <label for="number">Number</label>
+            <input type="number" id="number">
+        </div>
+        <div>
+            <label for="password">Password</label>
+            <input type="password" id="password">
+        </div>
+        <div>
+            <input type="radio" id="radio1" name="radio">
+            <label for="radio1">Radio1</label>
+            <input type="radio" id="radio2" name="radio">
+            <label for="radio2">Radio 2</label>
+        </div>
+        <div>
+            <label for="tel">Telefone</label>
+            <input type="tel" id="tel">
+        </div>
+        <div>
+            <label for="range">Range</label>
+            <input type="range" id="range">
+        </div>
+        <input type="reset">
+        <input type="submit" value="Submit">
+        <input type="button" value="Button">
+        <!-- Tem varios outros -->
+        <!-- https://www.w3schools.com/html/html_form_input_types.asp -->
+
+        <!-- Select -->
+        <div>
+            <label for="selecao">Select</label>
+            <select name="selecao" id="selecao">
+                <option value="opcao1">Opcao 1</option>
+                <option value="opcao2">Opcao 2</option>
+                <option value="opcao3">Opcao 3</option>
+            </select>
+        </div>
+    </form>
+
+    <!-- Explicação do #teste no link -->
+    <div id="teste">
+        <h2>Div de teste</h2>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+/* Declarações Gerais */
+* {
+    /* TODOS os elementos HTML sofrem alterações aqui */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Define como o tamanho total de altura e largura vai ser definido, nesse caso, no "tamanho da box"*/
+}
+
+html,
+body {
+    height: 100%;
+    /* Todos os elementos HTML por padrão tem height "auto", isso significa que seu tamanho será relativo ao conteudo presente, quanto mais conteudo,
+    maior a altura dele. Porém, caso em algum componente o desenvolvedor deseje configurar height como 60% da tela por exemplo, ele não irá funcionar,
+    visto que os elementos pais dele (na maioria das vezes o html > body) possuem height auto, para resolver isso é só definir como 100% para ambos*/
+}
+
+html {
+    scroll-behavior: smooth;
+    /* Atributo de "rolamento suave", um exemplo disso é quando colocar no <a href="#id"></a>,
+    o rolamento até o id será suave e não teleportado*/
+}
+
+body {
+    /* Configurações para todos os elementos filhos de body */
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    /* Div criada para delimitar o tamanho máximo da tela */
+    max-width: 1400px;
+    width: 100%;
+    padding: 0 2%;
+    margin: 0 auto;
+}
+
+/* Explicações de atributos mais comuns */
+.fontes {
+    /*Atributos de fontes*/
+    font-family: 'Courier New', Courier, monospace;
+    /* Colocam varias fontes, caso uma não funcione ele busca a próxima*/
+    font-size: 16px;
+    /* Por padrão é 16px, mas existem varias outras medidas, como por ex 1em, que dependendo do aparelho vai ser 16px ou outro*/
+    font-weight: bold;
+    /* Peso da fonte (100 a 800), aqui que define se é bold, light, regular, semibold etc */
+    font-style: italic;
+    /* Estilo da fonte */
+    font-variant: small-caps;
+    /* Formato do texto */
+    text-decoration: underline;
+    /* Decorações do texto, como por exemplo o risco de link abaixo do texto ou o que corta ele */
+    text-align: center;
+    /* Alinhamento do texto em relação a box */
+    text-wrap: wrap;
+    /* Define como e quando o texto vai quebrar se ultrapassar o tamanho da tela */
+    /* Tem mais opções no w3schools ou no https://developer.mozilla.org */
+}
+
+.boxes {
+    /* Cada elemento possui seus tamanhos defaults. Por padrão, uma div possui width: 100% e height: auto.*/
+    /* As medidas são relativas ao aparelho acessado e/ou elemento pai, sendo os principais: px, %, em, vw (view width), vh (view height) */
+    width: 100px;
+    height: 100px;
+
+    /* Por padrão, todos os tópicos que apresentam medida (com exceção das fontes), pode ser definido através de comandos individuais, como por exemplo:
+    margin-top, margin-right, margin-bottom, margin-left, porém também podem ser definidas como: "margin: cima direita baixo esquerda" usando as medidas padroes*/
+
+    margin: 10px 15px 20px 25px;
+    /* Espaçamento externo */
+    padding: 10px 15px 20px 25px;
+    /* Espaçamento interno */
+    overflow: scroll;
+    /* Caso um conteudo ultrapasse o tamanho da box, qual será a ação dela: visible (ultrapassa a box), hidden (esconde), 
+    scroll (gera uma barra de scroll). Pode ser definido de forma geral como também individualmente, como overflow-y e overflow-x*/
+    opacity: 0.7;
+    /* De 0 a 1 representa a opacidade da imagem. OBS.: Tem grandes diferenças em relação ao display: none */
+}
+
+.backgrounds {
+    background-color: aqua;
+    background-image: url('url da imagem');
+    background-position: center right;
+    /* Pode ser manipulando manualmente com as unidades de medida tradicionais, como também pelo padrão da tela */
+    background-repeat: no-repeat;
+    /* Caso a imagem seja menor que a box, ela não vai repetir */
+    background-size: contain;
+    /* Tambem pode ser manualmente ou usando os padrões. contain: vai conter a box, vai usar o tamanho default da imagem
+    cover: vai cobrir a box, dando um zoom caso seja menor */
+}
+
+.bordas {
+    border: 1px solid black;
+    /* definido como: tamanho da borda, formato, cor */
+    border-radius: 5px;
+    /* Pode ser definido manualmente */
+    border-collapse: collapse;
+    /* Define se caso duas bordas se conectem, se elas vao colidir ou não */
+
+    outline: none;
+}
+
+.displays {
+    /* https://www.w3schools.com/css/css_inline-block.asp */
+    /*
+        São vários os tipos de display, sendo eles:
+        - none: semelhante ao atributo opacity: 0, com a diferença que o opacity seu espaço permanece na tela, ja com o display é como se a tag não existisse
+        - block: padrão das divs e paragrafos, se comportam como blocos com width 100%, nao permitindo que tenham elementos irmãos (ao lado), somente embaixo
+        - inline: padrão dos spans/links/imgs, permitem que elementos possam ficar na mesma linha, porém não permite a definição de espaços dos elementos (margens, tamanhos, espaçamentos etc)
+        - inline-block: uma junção dos displays block e inline, permitindo manipular os elementos e deixa-los na mesma linha
+        - flex: permite a manipulação das posições dos elementos de uma forma muito mais simples, veja mais em: https://www.alura.com.br/apostila-html-css-javascript/19CA-novos-layouts-com-flexbox
+        - grid: permite a manipulação das posições através de colunas e linhas predefinidas, veja mais em: https://developer.mozilla.org/pt-BR/docs/Web/CSS/CSS_grid_layout/Basic_concepts_of_grid_layout
+    */
+
+    /*
+        Possuem muitas propriedades relativas ao display, portanto recomendo buscar pelos sites w3schools e developer.mozzila e ver os exemplos na prática
+    */
+}
